@@ -1,5 +1,11 @@
+/*
+시간복잡도에서 1ms 정도의 수치가 차이남
+이번 코드의 경우 스트링에 계속 추가하는 것보다, stringbuilder를 사용해서 하는 것이 더 효율적인 알고리즘임
+*/
+
 class Solution {
     public String solution(String s) {
+        //원래 내 풀이
 //         String answer = "";
 //         String[] str = s.split("");
         
