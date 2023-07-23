@@ -6,6 +6,7 @@ class Solution {
         
         for(int i = 0 ; i < prices.length; i++){
             stack.push(prices.length-1-i);
+            
             for(int j = i; j < prices.length; j++){
                 if(prices[i] > prices[j]) {
                     stack.pop();
