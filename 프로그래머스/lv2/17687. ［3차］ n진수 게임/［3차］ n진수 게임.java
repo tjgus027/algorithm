@@ -5,7 +5,7 @@ class Solution {
         StringBuilder answer = new StringBuilder();
         StringBuilder temp = new StringBuilder();
         
-        for(int i = 0; temp.length() <= t*m; i++){
+        for(int i = 0; temp.length() < t*m; i++){
             temp.append(Integer.toString(i, n));
         }
         
