@@ -2,7 +2,6 @@ import java.util.*;
 
 class Solution {
     public String solution(int[] numbers) {
-        String answer = "";
         String[] strNum = new String[numbers.length];
         for(int i = 0; i < numbers.length; i++){
             strNum[i] = String.valueOf(numbers[i]);
@@ -11,9 +10,10 @@ class Solution {
         
         if(strNum[0].equals("0")) return "0";
         
+        StringBuilder sb = new StringBuilder();
         for(String str : strNum){
-            answer += str;
+            sb.append(str);
         }
-        return answer;
+        return sb.toString();
     }
 }
